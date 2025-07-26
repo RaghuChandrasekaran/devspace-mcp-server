@@ -2,6 +2,14 @@
   "name": "devspace-mcp-server",
   "version": "1.0.0",
   "description": "MCP server for DevSpace CLI tool - enables AI assistants to interact with DevSpace for Kubernetes development",
+  "homepage": "https://github.com/RaghuChandrasekaran/devspace-mcp-server#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaghuChandrasekaran/devspace-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/RaghuChandrasekaran/devspace-mcp-server/issues"
+  },
   "main": "dist/index.js",
   "type": "module",
   "scripts": {

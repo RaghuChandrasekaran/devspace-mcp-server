@@ -22,10 +22,7 @@ A Model Context Protocol (MCP) server that enables AI assistants to interact wit
 ### Installation
 
 ```bash
-git clone <repository-url>
-cd devspace-mcp
-npm install
-npm run build
+npm install -g devspace-mcp-server
 ```
 
 ## 🔧 Configuration
@@ -41,8 +38,8 @@ Add to your Claude Desktop config file:
 {
   "mcpServers": {
     "devspace": {
-      "command": "node",
-      "args": ["/path/to/devspace-mcp/dist/index.js"],
+      "command": "npx",
+      "args": ["devspace-mcp-server"],
       "cwd": "~/",
       "env": {
         "LOG_LEVEL": "info"
@@ -61,8 +58,8 @@ Add to your Cursor settings (`Ctrl/Cmd + Shift + P` → "Preferences: Open Setti
   "mcp": {
     "servers": {
       "devspace": {
-        "command": "node",
-        "args": ["/path/to/devspace-mcp/dist/index.js"],
+        "command": "npx",
+        "args": ["devspace-mcp-server"],
         "cwd": "~/",
         "env": {
           "LOG_LEVEL": "info",
@@ -157,6 +154,36 @@ src/
 ```
 
 ## 🔧 Development
+
+### For Contributors
+
+If you want to contribute or modify the package locally:
+
+```bash
+git clone https://github.com/RaghuChandrasekaran/devspace-mcp-server.git
+cd devspace-mcp-server
+npm install
+npm run build
+```
+
+Then update your MCP configuration to use the local version:
+
+```json
+{
+  "mcpServers": {
+    "devspace": {
+      "command": "node",
+      "args": ["/path/to/devspace-mcp-server/dist/index.js"],
+      "cwd": "~/",
+      "env": {
+        "LOG_LEVEL": "debug"
+      }
+    }
+  }
+}
+```
+
+### Development Commands
 
 ```bash
 # Development mode with file watching
