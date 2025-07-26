@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "devspace": {
+      "command": "node",
+      "args": ["/absolute/path/to/devspace-mcp/dist/index.js"],
+      "cwd": "~/",
+      "env": {
+        "NODE_ENV": "production",
+        "LOG_LEVEL": "info"
+      }
+    }
+  }
+} 
