@@ -1,6 +1,6 @@
 {
   "name": "devspace-mcp-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "MCP server for DevSpace CLI tool - enables AI assistants to interact with DevSpace for Kubernetes development",
   "homepage": "https://github.com/RaghuChandrasekaran/devspace-mcp-server#readme",
   "repository": {
@@ -54,4 +54,4 @@
     "README.md",
     "claude-desktop-config.example.json"
   ]
-} 
+}
