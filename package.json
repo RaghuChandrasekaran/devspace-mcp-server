@@ -11,6 +11,9 @@
     "url": "https://github.com/RaghuChandrasekaran/devspace-mcp-server/issues"
   },
   "main": "dist/index.js",
+  "bin": {
+    "devspace-mcp-server": "dist/index.js"
+  },
   "type": "module",
   "scripts": {
     "build": "tsc",
